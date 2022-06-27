@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <td>title</td>
+            <td>genre</td>
+            <td>year</td>
+            <td>ratings</td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{row['title']}}</td>
+            <td>{{row['genres']}}</td>
+            <td>{{row['year']}}</td>
+            <td>{{row['rating']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go to Home Page</a>
+</body>
+</html>
